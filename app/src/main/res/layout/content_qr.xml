@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".QRActivity"
+    tools:showIn="@layout/activity_qr">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tv_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+            android:layout_marginTop="20dp"
+            android:id="@+id/qrdecoderview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
